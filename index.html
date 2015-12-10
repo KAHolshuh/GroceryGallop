@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Grocery Gallop</title>
+    
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="js/script.js"></script>
+<script src="js/bootbox.min.js"></script>
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+    
+<body class="full">
+
+<div class="container">
+    <div class="col-sm-3 center-block">
+        <br><img id="logo" class="img-responsive center-block animated flipInY" src="img/GG_Logo.png"><br>
+        <h3 id="timer" class="well well-sm header animated fadeInLeft">Timer:</h3>
+        <div id="result"></div>
+        <div id="result2"></div>
+        <div class="center-block">
+            <button id="saver" class="btn btn-success animated fadeInLeft" onclick=Saver()>Save</button>
+            <button id="loader" class="btn btn-success animated fadeInLeft" onclick=Loader()>Load</button>
+            <button id="clearer" class="btn btn-success animated fadeInLeft" onclick=ClearLS()>Clear</button>
+        </div>
+        </br><h4 id="mylocation" style="display:none" class="header text-center">My Location View</h4>
+        </br><img id="sceneLocation" class="img-responsive img-rounded center-block"/>
+    </div>
+    <div id="mainstage" class="well well-lg text-center col-sm-6 animated flipInY">
+        <h1 id="scenetitle" class="header animated pulse"><i class="fa fa-shopping-cart"></i><strong> Welcome to Grocery Gallop!</strong></h1>
+        <div id="test" class="panel panel-success" style="display: none">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-comment"></span>
+                            <div class="panel-body">
+                                <div class="well">
+                                    <div id="textreceiver" class="textreceiver"></div>  
+                                </div>
+                            </div>   
+                    </div> 
+                    <div id="chatInput" class="panel-footer">
+                        <div class="input-group">
+                            <input type="text" class="form-control speak" id="sendtext"/>
+                            <span class="input-group-btn">
+                            <button type="submit" id="btnSearch" class="btn btn-success" onclick="SendText()">SAY</button>
+                            </span><br>
+                        </div>
+                        <div>
+                        <button class="center-block btn btn-info" onclick="printCommands()">View Commands</button>
+                        </div>
+                    </div>
+            </div>
+        <script src="js/script.js"></script>
+
+        <div id="intro" class="animated fadeInUp">
+        <p>You are Suzy, a hip, young progressive go getter in the beautiful city of Boulder.  You recently left your high profile career at the law firm of Jacobs, Jacobs and Jacoby to spend more time with your kids.  With this transition comes obvious day to day challenges, such as balancing your checkbook, making time for yoga, and the arduous task of navigating the grocery store to obtain nutritious foods for your children.
+
+                Today, you need to gallop through the local market to obtain several key items.  Your family needs organic, fresh, cost effective items to suit their sophisticated palettes.</p>  
+        </div>
+        <img id="mainimage" src="img/Mom.png" class="img-responsive img-rounded center-block"><br>
+        <button id="start" class="btn btn-success animated bounceInLeft" onclick="changeScene()">Start Game</button>
+       
+    </div>
+    <div class="col-sm-3">
+        <div id="groceryList" class="well well-sm animated fadeInRight">
+            <h3 class="header text-center"><i class="fa fa-list"></i> Suzy's Shopping List</h3>
+            <ul>
+                <li>Produce</li>
+                <li>Milk</li>
+                <li>Bread</li>
+            </ul>
+        </div>
+        <div id="shoppingCart" class="well well-sm animated fadeInRight">
+            <h3 class="header text-center"><i class="fa fa-money"></i> Wallet</h3>
+            <table class="table">
+                <tr>
+                    <td><h4 class="header"><strong>Amount Left:</strong></h4></td>
+                    <td><h4>$<span id="currency">200</span></h4></td>
+                </tr>
+            </table>
+            <h3 class="header text-center"><i class="fa fa-shopping-cart"></i> Shopping Cart</h3>
+            <div id="items">
+                <table id="cart" class="table">
+            
+                <table class="table">
+                    <tr>
+                        <td><h3 class="header"><strong>Total:</strong></h3></td>
+                        <td><h3><span id="myTotal"></span></h3></td>
+                    </tr>
+                </table>
+                </table>
+            </div>
+        </div>
+    </div>   
+</div>
+    
+    
+</body>
+</html>

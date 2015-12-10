@@ -1,0 +1,84 @@
+.full {
+    background-color:lightblue;
+}
+
+.header {
+    color: #58BFED;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif; 
+}
+
+.well {
+    margin-top:10px;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Open Sans Condensed', sans-serif; 
+}
+
+ul {
+  list-style-type: circle;
+}
+
+li {
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif; 
+}
+
+.table {
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif; 
+}
+
+.btn {
+    font-family: 'Open Sans Condensed', sans-serif; ;
+}
+
+#mylocation {
+    color:white;
+}
+
+#scenetitle {
+    animation-iteration-count: infinite;
+}
+
+/*#timer {
+    animation-delay: 2s;
+}
+
+#saver {
+    animation-delay: 2s;
+}
+
+#loader {
+    animation-delay: 2s;
+}
+
+#clearer {
+    animation-delay: 2s;
+}
+
+
+#intro {
+    animation-delay: 3s;
+}
+
+#mainimage {
+    animation-delay: 3s;
+}
+
+#start {
+    animation-delay: 6s;
+}
+
+#groceryList {
+    animation-delay: 4s;
+}
+
+#shoppingCart {
+    animation-delay: 4s;
+}
+
+
+    
