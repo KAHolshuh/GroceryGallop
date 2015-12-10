@@ -46,7 +46,7 @@ function CheckKnownCom(str) {
         document.getElementById("textreceiver").innerHTML = "<p>" + answers[a] + "</p>";
         return;
     } else {
-        document.getElementById("textreceiver").innerHTML = "<p>Sorry, I don't understand that command.</p>";
+        document.getElementById("textreceiver").innerHTML = "<p>Sorry, I do not understand that command.</p>";
     }
 }
 
@@ -125,9 +125,9 @@ var list = [
     {name: "Argula", price: 10},
     {name: "Weed", price: 100},
     {name: "Kale", price: 10},
-    {name: "Johnny Frank's", price: 10},
+    {name: "Johnny Frank", price: 10},
     {name: "Soy Milk", price: 25},
-    {name: "Maestro Matt's", price: 10},
+    {name: "Maestro Matt", price: 10},
     {name: "Gluten-Free Bread", price: 20},
     {name: "French Bread", price: 15},
     {name: "Wheat Bread", price: 10}
@@ -153,7 +153,7 @@ var allScenes =
 		chatBoxInput: ['yes',
                          'no',
                          'help'], 
-		chatBoxOutput: ["Thank you very much! Your purchase will help bring Polar Bears to Vail! You know they’re an endangered species in the northern climates. I think Colorado has much to offer! I love Polar Bears. I watched a show about them on National Geographic.",
+		chatBoxOutput: ["Thank you very much! Your purchase will help bring Polar Bears to Vail! You know they are an endangered species in the northern climates. I think Colorado has much to offer! I love Polar Bears. I watched a show about them on National Geographic.",
                
                           "That makes me very sad. Please stop by on your next grocery trip.",
                           
@@ -167,7 +167,7 @@ var allScenes =
         sceneTitle: "Produce",
         sceneImage: "img/Produce.jpg",
 		backgroundImage: "img/producechoices.jpg", //id for image is "mainimage"
-            intro: "You've made it past the adorable Girl Scouts! You've started your Grocery Gallup, and you're leafing your way towards the kale. You usually buy Kale since you read about it in Boulder Weekly magazine. You approach the produce section only to find a dizzying array of gourds and greens.  There are more types of vegetables and fruits than you can count!  You approach the section that looks like it contains the leafy greens.  However, the labels have been mixed up!  You can’t tell which is which, and you specifically need organic Kale, so choose carefully. Please type '1', '2', or '3'.",
+            intro: "You made it past the adorable Girl Scouts! You have started your Grocery Gallup, and you are leafing your way towards the kale. You usually buy Kale since you read about it in Boulder Weekly magazine. You approach the produce section only to find a dizzying array of gourds and greens.  There are more types of vegetables and fruits than you can count!  You approach the section that looks like it contains the leafy greens.  However, the labels have been mixed up!  You can’t tell which is which, and you specifically need organic Kale, so choose carefully. Please type '1', '2', or '3'.",
 		chatBoxInput: ["1","2","3","help"], 
 		chatBoxOutput: ["Hmmmm okay.  I think that is kale.  I’m not really sure though.  Just feed it to your kids and let’s see how it turns out.", "Duuuuuuuuuuuuude.", "Yummy!  Your kids will love that.  You’ve selected the kale.  We really need to get our label machine fixed."],
             buttonText: "Next" , //id "textreceiver"
@@ -177,9 +177,9 @@ var allScenes =
         sceneTitle: "Dairy",
         sceneImage: "img/Dairy.jpg",
 		backgroundImage: "img/dairychoice.jpg", //id for image is "mainimage"
-            intro: "You are really looking forward to devouring a few kale chips and the entire kale casserole before your kids get their hands on them. But you still have a few more items on your list. What’s next? Milk. You haven't bought regular milk since the mid 1990s. You are on your way to find the most responsibly sourced, freshest soy milk on the market. With Jeni’s Ice Cream recent outbreak of Listeria monocytogenes top of mind, quality is paramount! Choose the name of the soy milk to learn more about it, or enter the number of the soy milk to buy it. Please type '1', '2', or '3'.",
+            intro: "You are really looking forward to devouring a few kale chips and the entire kale casserole before your kids get their hands on them. But you still have a few more items on your list. What’s next? Milk. You have not bought regular milk since the mid 1990s. You are on your way to find the most responsibly sourced, freshest soy milk on the market. With Jeni’s Ice Cream recent outbreak of Listeria monocytogenes top of mind, quality is paramount! Choose the name of the soy milk to learn more about it, or enter the number of the soy milk to buy it. Please type '1', '2', or '3'.",
 		chatBoxInput: ["1","2","3", "johnny", "active", "maestro", "help"], 
-		chatBoxOutput: ["Are you sure that's soy milk?  Suit yourself.", "Good choice.  Always go local.","Moon milk?  So not local brah.","Jonny Franks’ Soy Milk originates from the fattest cows in the world. Located in what’s known as the armpit of America, Johnny's farm boosts the healthiest grass feed cows in all of the state of New Jersey. It all starts with a strong devotion to quality. This milk won the Milker’s Choice Award of 2015." , "Active Dan’s Soy Milk can only be found in three grocery stores worldwide. Many refer to it as a delicacy for its natural flavor and nutty top notes. Dan’s milk is unique because of the intimate relationship his farm has established with local nonprofits. 10% of each soy milk purchase is donated to one of ten nonprofits in Colorado." , "Maestro Matt’s Soy Milk is inspired by an iconic figure in Greek Mythology who uses his powers to control technology-enabled devices. This brand uses creative methods to market their product and remains most popular with the elderly (age 65+). Maestro Matt’s soy milk is packaged and shipped from the moon. ALL PURCHASES ARE FINAL!", "Your choices for this scene are '1', '2', '3', 'johnny', 'active', and 'maestro'"], //id "textreceiver"
+		chatBoxOutput: ["Are you sure that is soy milk?  Suit yourself.", "Good choice.  Always go local.","Moon milk?  So not local brah.","Johnny Franks’ Soy Milk originates from the fattest cows in the world. Located in what’s known as the armpit of America, Johnny farm boosts the healthiest grass feed cows in all of the state of New Jersey. It all starts with a strong devotion to quality. This milk won the Milker’s Choice Award of 2015." , "Active Dan’s Soy Milk can only be found in three grocery stores worldwide. Many refer to it as a delicacy for its natural flavor and nutty top notes. Dan’s milk is unique because of the intimate relationship his farm has established with local nonprofits. 10% of each soy milk purchase is donated to one of ten nonprofits in Colorado." , "Maestro Matt’s Soy Milk is inspired by an iconic figure in Greek Mythology who uses his powers to control technology-enabled devices. This brand uses creative methods to market their product and remains most popular with the elderly (age 65+). Maestro Matt’s soy milk is packaged and shipped from the moon. ALL PURCHASES ARE FINAL!", "Your choices for this scene are '1', '2', '3', 'johnny', 'active', and 'maestro'"], //id "textreceiver"
          buttonText: "Next" ,
         },
         {
@@ -189,7 +189,7 @@ var allScenes =
 		backgroundImage: "img/GettingHitOn.jpg", //id for image is "mainimage"
             intro: "Suzy, you need to maintain your status as a Boulder foodie. Therefore, you must purchase some delicious fresh baked bread. You make your way to the bakery aisle. As you near the Bakery section, you accidentally make eye contact with an unsavory gentlemen. You are distracted by his comb-over, dirty mustache and his wandering eye towards your yoga pants.Unsettled, and still searching for gluten free bread, you try to quickly disengage from this man.<br>SKEEZYMAN 'Hey, honey, what are you doing in the bread aisle? Are you on a roll? [Laughter]. Seriously,though, can I get your number?' Please type 'yes' or 'no'.",
 		chatBoxInput: ["yes","no"], 
-		chatBoxOutput: ["Man takes your phone number(and your money). Game Over", "Good call. Let's get some bread and get out of here"], //id "textreceiver"
+		chatBoxOutput: ["Man takes your phone number(and your money). Game Over", "Good call. How about we get some bread and get out of here?"], //id "textreceiver"
          buttonText: "Next" 
         },
         {
@@ -199,7 +199,7 @@ var allScenes =
 		backgroundImage: "img/bakerychoice.jpg", //id for image is "mainimage"
             intro: "Your eldest child has celiac disease and you always feel bloated after eating wheat, so you probably want to consider this while making your choice. You make your way to the bakery aisle. Please type '1', '2', or '3'.",
 		chatBoxInput: ["1","2","3","help"], 
-		chatBoxOutput: ["Perfect! Gluten-free is really the key to a healthy lifestyle, even though you probably don't know what it is.", "Umm... I'm feeling bloated just looking at this. Try again.","Why would anyone eat wheat? Ugh."], //id "textreceiver"
+		chatBoxOutput: ["Perfect! Gluten-free is really the key to a healthy lifestyle, even though you probably do not know what it is.", "Umm... I feel bloated just looking at this. Try again.","Why would anyone eat wheat? Ugh."], //id "textreceiver"
          buttonText: "Next" 
         },
          {
@@ -207,7 +207,7 @@ var allScenes =
         sceneTitle: "Checkout",
         sceneImage: "img/busycheckout.jpg",
 		backgroundImage: "img/checkout_1.jpg", //id for image is "mainimage"
-             intro: "You make your way to checkout, gallop on, Suzy! You're almost there! The checkout aisle is chalk full of people, as you get in line, now would be a good time to make sure you have all of your grocery store items.  Type 'checkout' when you're ready to pay.",
+             intro: "You make your way to checkout, gallop on, Suzy! You are almost there! The checkout aisle is chalk full of people, as you get in line, now would be a good time to make sure you have all of your grocery store items.  Type 'checkout' when you are ready to pay.",
 		chatBoxInput: ["checkout"],
 		chatBoxOutput: ["Click 'Checkout' at the bottom to proceed"], //id "textreceiver"
     buttonText: "Checkout"
@@ -413,7 +413,7 @@ function CheckoutFinal(currency, sceneNumber) {
            bootbox.alert(text1);
            console.log(text1);
     } else if (sceneNumber == (allScenes.length-1) && currency < 0) {
-        var text2 ="You have made it to the checkout clerk...but TOO BAD!.  You don't have enough money!  You have failed the Grocery Gallop!  Try again.";
+        var text2 ="You have made it to the checkout clerk...but TOO BAD!.  You do not have enough money!  You have failed the Grocery Gallop!  Try again.";
        // document.getElementById("textreceiver").innerHTML = text2;
         bootbox.alert(text1);
         console.log(text1);
